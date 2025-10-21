@@ -16,17 +16,17 @@ int main()
 
         std::cout << "Номер комнаты: " << std::endl;
         std::cin >> room_index;
-        if (room_index > 9)
+        if (room_index > 9 || room_index < 0)
         {
             break;
         }
         std::cout << "Сколько котов переместилось: " << std::endl;
         std::cin >> cats_count;
 
-        if ((rooms_with_cats [room_index] - cats_count) < 0)
-        {
+        if (cats_count < 0 && rooms_with_cats[room_index] + cats_count < 0) {
             break;
         }
+
 
         rooms_with_cats [room_index] += cats_count;
 

@@ -1,6 +1,5 @@
 // Игра кота (с кальмаром)
 
-
 // #include <random>
 #include <iostream>
 
